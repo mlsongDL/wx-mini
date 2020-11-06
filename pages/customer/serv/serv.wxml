@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="pay-result">
+    <view class="success" wx:if="{{status == 'true'}}">
+      <view class="msg">付款成功</view>
+      <view class="btns">
+        <button class="btn" open-type="contact" wx:if="{{type == 1}}">进入问诊</button>
+        <navigator url="/pages/doctor/doctor">
+          <button class="btn" wx:if="{{type == 2}}">进入问诊</button>
+        </navigator>
+      </view>
+    </view>
+    <view class="error" wx:if="{{status == 'false'}}">
+      <view class="msg">付款失败</view>
+    </view>
+  </view>
+</view>

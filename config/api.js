@@ -43,6 +43,9 @@ module.exports = {
     OrderSubmit: NewApiRootUrl + 'order/submit', // 提交订单
     PayPrepayId: NewApiRootUrl + 'pay/prepay', //获取微信统一下单prepay_id
 
+    PayClientPrepayId: NewApiRootUrl + 'pay/client/prepay', //获取微信统一下单prepay_id
+
+
     CollectList: NewApiRootUrl + 'collect/list',  //收藏列表
     CollectAddOrDelete: NewApiRootUrl + 'collect/addordelete',  //添加或取消收藏
 
@@ -53,6 +56,7 @@ module.exports = {
   TopicList: NewApiRootUrl + 'topic/list',  //专题列表
     TopicDetail: NewApiRootUrl + 'topic/detail',  //专题详情
     TopicRelated: NewApiRootUrl + 'topic/related',  //相关专题
+    TopicCase: NewApiRootUrl + 'topic/case',  //案例专题
 
     SearchIndex: NewApiRootUrl + 'search/index',  //搜索页面数据
     SearchResult: NewApiRootUrl + 'search/result',  //搜索数据
@@ -118,5 +122,6 @@ module.exports = {
   KillList: NewApiRootUrl + 'goods/kill.do',//秒杀
   GroupBuyList: NewApiRootUrl + 'buy/getGroupBuyList.do',//团购列表
   
-  
+  ShowClient: NewApiRootUrl + 'show/client',//客服显示
+  DoctorList: NewApiRootUrl + 'doctor/list',//医生列表显示
 }; 

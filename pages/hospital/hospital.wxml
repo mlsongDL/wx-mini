@@ -1,0 +1,78 @@
+<view class="container">
+  <view class="search">
+    <navigator url="/pages/search/search" class="input">
+      <image class="icon"></image>
+      <text class="txt">商品搜索, 共{{goodsCount}}款好物</text>
+    </navigator>
+  </view>
+
+  <view class="top">
+    <navigator url="url" class="banner">
+      <image class="image" src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200708/093358895b2448.jpg"></image>
+    </navigator>
+    <view class="hd">
+            <text class="line"></text>
+            <text class="txt">宠物医院</text>
+            <text class="line"></text>
+        </view>
+  </view>
+
+  <view>
+    <navigator url="/pages/hospitaldetail/hospitaldetail">
+      <view class="box border-orange">
+        <view class="img-box box-orange">
+          <image class="img" src="/static/images/info.png"/>
+        </view>
+        <view class="txt-box">
+          <view>
+            <text class="txt-orange">医院信息</text>
+          </view>
+          <view>
+            <text class="txt-small">为您提供详细的医院和医疗团队信息</text>
+          </view>
+        </view>
+        <view class="txt-box-small">
+            <text class="txt-orange right">></text>
+        </view>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/consult/consult" wx:if="{{showClient}}">
+      <view class="box border-cyan">
+        <view class="img-box box-cyan">
+          <image class="img" src="/static/images/online.png"/>
+        </view>
+        <view class="txt-box">
+          <view>
+            <text class="txt-cyan">在线问诊</text>
+          </view>
+          <view>
+            <text class="txt-small">专业客服和爱宠医疗团队为您解答</text>
+          </view>
+        </view>
+        <view class="txt-box-small">
+            <text class="txt-cyan right">></text>
+        </view>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/case/case">
+      <view class="box border-blue">
+        <view class="img-box box-blue">
+          <image class="img" src="/static/images/success.png"/>
+        </view>
+        <view class="txt-box">
+          <view>
+            <text class="txt-blue">成功案例</text>
+          </view>
+          <view>
+            <text class="txt-small">分享本院的多起经典成功治疗案例</text>
+          </view>
+        </view>
+        <view class="txt-box-small">
+            <text class="txt-blue right">></text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

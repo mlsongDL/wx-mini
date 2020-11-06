@@ -1,0 +1,49 @@
+<view class="container">
+<!--
+    <view class="order_me">
+       <view class="li {{ orderId =='-1'  ? 'active' : ''}}" data-id="-1" bindtap="switchCate">全部</view>
+       <view class="li {{ orderId == 0 ? 'active' : ''}}" data-id="0" bindtap="switchCate">待付款</view>
+       <view class="li {{ orderId == 201 ? 'active' : ''}}" data-id="201" bindtap="switchCate">待收货</view>
+       <view class="li {{ orderId == 301 ? 'active' : ''}}" data-id="301" bindtap="switchCate">已完成</view>
+       <view class="li {{ orderId == 101 ? 'active' : ''}}" data-id="101" bindtap="switchCate">已取消</view>
+    </view>
+-->
+    <view class="orders">
+        <navigator url="../orderDetail/orderDetail?id={{item.id}}" class="order" wx:for="{{doctorList}}" wx:key="{{item.id}}">
+            <view class="order-goods">
+              <view class="h">
+                  <view class="label">{{item.title}}</view>
+                  <view class="status"><button class="btn">从业{{item.workingYear}}年</button></view>
+              </view>
+              <view class="goods">
+                  <view class="item">
+                      <view class="img">
+                          <image src="{{item.picUrl}}"></image>
+                      </view>
+                      <view class="info">
+                          <view class="t">
+                              <text class="name">{{item.name}}</text> 
+                          </view> 
+                          <view class="t">
+                              <text class="hospital">{{item.hostipal}}</text> 
+                          </view>
+                          <view class="t">
+                              <text class="major">专长： {{item.major}}</text> 
+                          </view>
+                      </view>
+                  </view>
+              </view>
+               <view class="b"> 
+                <view class="r">
+                    <button class="btn gopay" data-tel="{{item.tel}}" bindtap="call">电话沟通</button>
+                </view>
+              </view> 
+          </view> 
+        </navigator>
+    </view>
+
+     <view class="empty-view" wx:if="{{ doctorList.length <= 0 }}">
+      <image class="icon" src="../../../static/images/allorder.png"></image>
+      <text class="text">无医生数据</text>
+    </view>
+</view>

@@ -1,0 +1,66 @@
+<view class="container">
+  <view class="search">
+    <navigator url="/pages/search/search" class="input">
+      <image class="icon"></image>
+      <text class="txt">商品搜索, 共{{goodsCount}}款好物</text>
+    </navigator>
+  </view>
+
+  <view class="top">
+    <navigator url="url" class="banner">
+      <image class="image" src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200708/093358895b2448.jpg"></image>
+    </navigator>
+    <view class="hd">
+            <text class="line"></text>
+            <text class="txt">在线问诊</text>
+            <text class="line"></text>
+        </view>
+  </view>
+
+  <view>
+    <view class="box border-cyan">
+      <view class="img-box box-cyan">
+        <image class="img" src="/static/images/online.png"/>
+      </view>
+      <view class="txt-box">
+        <view>
+          <text class="txt-cyan">微信咨询</text>
+          <text class="txt-black"> ￥9.9</text>
+        </view>
+        <view>
+          <text class="txt-small">专业客服和爱宠医疗团队问您解答</text>
+        </view>
+      </view>
+      <view class="txt-box-small">
+        <button catchtap="payOrder" class="contact-btn">
+          <view class="txt-cyan right">
+            >
+          </view>
+        </button>
+      </view>
+    </view>
+
+    <view class="box border-orange">
+      <view class="img-box box-orange">
+        <image class="img" src="/static/images/info.png"/>
+      </view>
+      <view class="txt-box">
+        <view>
+          <text class="txt-orange">电话问诊</text>
+            <text class="txt-black"> ￥9.9</text>
+        </view>
+        <view>
+          <text class="txt-small">快速联系宠物名医，为您提供专业指导</text>
+        </view>
+      </view>
+      <view class="txt-box-small">
+        <button catchtap="payOrder2" class="contact-btn">
+          <view class="txt-orange right">
+            >
+          </view>
+        </button>
+      </view>
+    </view>
+
+  </view>
+</view>

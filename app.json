@@ -43,8 +43,15 @@
     "pages/customer/add/add",
     "pages/customer/addwh/addwh",
     "pages/customer/cuslist/cuslist",
+    "pages/customer/serv/serv",
     "pages/spike/spike",
-    "pages/group/group"
+    "pages/group/group",
+
+    "pages/hospital/hospital",
+    "pages/hospitaldetail/hospitaldetail",
+    "pages/doctor/doctor",
+    "pages/consult/consult",
+    "pages/case/case"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -64,6 +71,12 @@
         "iconPath": "static/images/ic_menu_choice_nor.png",
         "selectedIconPath": "static/images/ic_menu_choice_pressed.png",
         "text": "首页"
+      },
+      {
+        "pagePath": "pages/hospital/hospital",
+        "iconPath": "static/images/ic_menu_topic_nor.png",
+        "selectedIconPath": "static/images/ic_menu_topic_pressed.png",
+        "text": "医院"
       },
       {
         "pagePath": "pages/catalog/catalog",

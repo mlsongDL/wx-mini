@@ -185,7 +185,7 @@ Page({
     let that=this
     if (that.data.addressId <= 0) {
       util.showErrorToast('请选择收货地址');
-      return false;
+      return false;submit
     }
     wx.showLoading({
       title: '提交中'
